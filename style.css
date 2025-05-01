@@ -117,7 +117,7 @@
   
   /* ----------------- RESPONSIVE ----------------- */
 
-  @media (max-width: 768px) {
+  @media (max-width: 808px) {
     .menu {
       display: none;
       flex-direction: column;
@@ -228,7 +228,7 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
     margin: 40px 0;
    }
-   @media (max-width: 768px) {
+   @media (max-width: 868px) {
     .plats{
       column-count: 2;
     }
@@ -236,5 +236,12 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       width: 100%;
     }
   }
-   
+   @media (max-width: 608px) {
+    .plats{
+      column-count: 1;
+    }
+    .texte{
+      width: 100%;
+    }
+  }
    
