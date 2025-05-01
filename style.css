@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    padding-top: 80px; /* espace pour navbar */
+    margin-bottom: 20px;
+  }
+  
+  .navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    z-index: 1000;
+    
+  }
+
+  .logo {
+    font-weight: bold;
+    font-size: 40px;
+    margin-left: 5%;
+    font-family: "Sacramento", cursive;
+  font-weight: 900;
+  font-style: normal;
+  color: red;
+  }
+  
+  .menu {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+  }
+  
+  .search-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .search-container input[type="search"] {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+  }
+  
+  .search-btn {
+   background-color: white;
+    color: white;
+    border: none;
+    padding: 2px 4px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  .search-btn:hover {
+    background-color: #007BFF;
+  }
+  
+  .hamburger {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+  }
+  
+  .bg-image {
+    width: 100%;
+    height: 600px;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.5), /* Couleur noire semi-transparente en haut */
+        rgba(0, 0, 0, 0.5)  /* Couleur noire semi-transparente en bas */
+      ), 
+      url('./image/4f9f7ea52ede170a3bc2d9688d40354c.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+  justify-content: center;
+    flex-direction: column;
+    color: white;
+    padding: 20px;
+    flex-grow: 0;
+  }
+  .titre {
+    font-size: 48px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin-left: 20px;
+  }
+  .paragraphe {
+    font-size: 20px;
+    margin: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  }
+  .btn{
+    width: 150px;
+    padding: 15px;
+    background-color: lightcoral;
+    border: none;
+    border-radius: 30px;
+    margin-left: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* ----------------- RESPONSIVE ----------------- */
+
+  @media (max-width: 768px) {
+    .menu {
+      display: none;
+      flex-direction: column;
+      background-color: white;
+      position: absolute;
+      top: 70px;
+      right: 20px;
+      padding: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      opacity: 0;
+      transform: translateY(-20px);
+      transition: all 0.3s ease;
+      border-radius: 8px;
+    }
+    .plats{
+      column-count: 2;
+    }
+  
+    .menu.active {
+      display: flex;
+      opacity: 1;
+      transform: translateY(0);
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  
+    .search-container {
+      display: none;
+    }
+  }
+  
+   .menu-nourriture{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    flex-wrap: wrap;
+    margin-bottom: 90px;
+   }
+   .item{
+    padding: 20px 40px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+   }
+   .tous{
+    background-color: lightcoral;
+   }
+   .item:hover{
+    background-color: lightcoral;
+   }
+   .special{
+    text-align: center;
+   }
+   .spc{
+    margin-top: 10px;
+    color: #00000086;
+   }
+   .plats{
+column-count: 3;
+margin-top: 90px;
+padding: 10px 40px;
+background-color: white;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+   }
+   .texte{
+    width: 100%;
+    column-width: 100%;
+    padding:10px 0 ;
+    
+   }
+   .im{
+    width:100%;
+    border-radius: 20px;
+    padding-bottom: 10px;
+   }
+   .im:hover{
+    transform: scale(1.05);
+    transition: all 0.5s ease;
+
+   }
+   .recette{
+    margin: 20px 0;
+   }
+   .griot{
+    margin-bottom: 5px;
+   }
+   span{
+    margin: 20px 0;
+    color: lightcoral;
+   }
+   span::after{
+    content: ' ->';
+   }
+   .btn2{
+    text-decoration: none;
+    color: lightcoral;
+    border: 1px solid lightcoral;
+   
+    padding: 10px 10px;
+    border-radius: 10px;
+   }
+   .plat{
+    text-align: center;
+    margin: 40px 0;
+   }
+   @media (max-width: 768px) {
+    .plats{
+      column-count: 2;
+    }
+    .texte{
+      width: 100%;
+    }
+  }
+   
+   

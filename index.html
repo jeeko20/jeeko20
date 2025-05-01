@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar">
+  <p class="logo">Saveurs d’Haiti</p>
+
+  <div class="menu" id="menu">
+    <a href="#">Accueil</a>
+    <a href="#">Plats Traditionnels</a>
+    <a href="#">Chefs</a>
+    <a href="#">À Propos</a>
+    <a href="#">Contacts</a>
+  </div>
+
+  <div class="search-container">
+    <input type="search" placeholder="Rechercher votre Plat">
+    <button type="submit" class="search-btn">🔍</button>
+  </div>
+
+  <div class="hamburger" id="hamburger">
+    ☰
+  </div>
+</nav>
+
+<div class="bg-image">
+  <h4 class="titre">Découvrez la Richesse de<br> la cuisine Haitienne</h4>
+  <p class="paragraphe">Un voyage culinaire à travers les saveurs authentiques et l'héritage<br> gastronomique d'Haïti, où chaque plat raconte une histoire.</p>
+  <button class="btn">Explorer Nos Plats</button>
+</div>
+<div class="menu-nourriture">
+    <p class="item tous" id="tous">Tous les plats</p>
+    <p class="item">Plats Principaux</p>
+    <p class="item">Desserts</p>
+    <p class="item">Boissons</p>
+    <p class="item">Vegetarien</p>
+    <p class="item">Epice</p>
+</div>
+<div class="special">
+    <h1>Plats Traditionnels</h1>
+    <p class="spc">Decouvrez les saveurs authentiques qui font la renommee de la cuisine<br>haitienne a travers le monde. Chaque plat est prepare avec des ingredients<br> frais et des techniques Traditionnelles</p>
+</div>
+<div class="plats"> 
+  <div class="texte">
+    <img class="im" src="./image/3a0e4c3b8bb521a5945c999ea96d38f1.jpg">
+   <h2>soup joumou</h2>
+    <p class="imgtexte">Soupe à la citrouille servie traditionnellement le jour de l'An pour célébrer l'indépendance d'Haïti. Riche en légumes et viandes.</p>
+   <p class="recette"><span>voir recette</span></p>
+  </div>
+  <div class="texte">
+    <img class="im" src="./image/77414c9ebe5e0e6b12a0fe63cd1c39c0.jpg">
+    <h2>Diri ak djondjon</h2>
+    <p class="imgtexte">Riz noir aux champignons djon djon, accompagné de haricots lima et de viande. Un plat emblématique de la cuisine haïtienne.</p>
+ <p class="recette"><span>voir recette</span></p>
+  </div>
+  <div class="texte">
+    <img class="im" src="./image/41070d5144c48df7edc03c961920df6c.jpg">
+    <h2>Tassot</h2>
+    <p class="imgtexte">Viande de cabri ou de bœuf marinée dans des agrumes et des épices, puis frite jusqu'à ce qu'elle soit croustillante.</p>   
+    <p class="recette"><span>voir recette</span></p>
+    </div>
+    <div class="texte">
+      <img class="im" src="./image/19e3908717c670cf92242ed6d40001d5.jpg">
+      <h2>Legim</h2>
+      <p class="imgtexte">Ragoût de légumes épais composé d'aubergines, de choux, de carottes et d'autres légumes, servi avec du riz blanc.</p>
+      <p class="recette"><span>voir recette</span></p>
+    </div>
+    <div class="texte  griot">
+     <img class="im" src="./image/3a9e9cd2924bcfb4710074c55ffb4685.jpg">
+   <h2>Griot</h2>
+     <p class="imgtexte">Morceaux de porc marinés et frits à la perfection, servis avec du pikliz (condiment épicé) et des bananes<br> plantains</p>
+      <p class="recette"><span>voir recette</span></p>
+    </div>
+   <div class="texte">
+  <img class="im" src="./image/3e9a0b9610d25381575def8f7e588292.jpg">
+  <h2>Banane peze</h2> 
+  <p class="imgtexte">Bananes plantains écrasées et frites deux fois, servies traditionnellement avec du pikliz. Un accompagnement incontournable.</p>
+ <p class="recette"><span>voir recette</span></p>
+</div>
+
+</div>
+<p class="plat"><a href="#" class="btn2">Voir Plus de Plats</a></p>
+<script>
+    const hamburger = document.getElementById('hamburger');
+const menu = document.getElementById('menu');
+
+hamburger.addEventListener('click', () => {
+  menu.classList.toggle('active');
+});
+const tous=document.getElementById('tous');
+tous.addEventListener('mouseover', () => {
+  tous.style.background = 'white';
+});
+tous.addEventListener('mouseout', () => {
+  tous.style.background = 'lightcoral';
+});
+</script>
+
+</body>
+</html>
